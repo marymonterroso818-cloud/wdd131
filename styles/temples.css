@@ -1,0 +1,118 @@
+:root {
+  --body-font: "Merriweather", Georgia, serif;
+}
+
+/*CSS Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Text font */
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+h1, h2 {
+  font-family: var(--body-font);
+}
+
+/* Temple Album Header */
+header {
+  /*position: relative;*/
+  background-color: #513C59;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+header span {
+  display: block;
+  font-family: var(--body-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Hamburger menu */
+#menu {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "✖";
+}
+/* Navigation */
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 700;
+  display: none;
+}
+
+nav a:hover {
+  background-color: #F5EFF7;
+  color: #302638;
+}
+
+nav.open a {
+  display: block;
+}
+
+/* Main content */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.temple-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.temple-grid figcaption {
+  text-align: center;
+  padding: 0.5rem;
+  color: #302638;
+  font-weight: 700;
+}
+
+/* Footer */
+.footer {
+  background-color: #513C59;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+}

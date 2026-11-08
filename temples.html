@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album | WDD 131</title>
+  <meta name="description" content="A responsive photo album featuring temples of The Church of Jesus Christ of Latter-day Saints."></meta>
+  <meta name="author" content="Mary Monterroso"></meta>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <span>Temple Album</span>
+
+    <button id="menu" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation"></button>
+
+    <nav id="primary-navigation">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Home</h1>
+    <div class="temple-grid">
+      <figure>
+        <img src="images/aba-nigeria-temple.jpg" alt="Aba Nigeria Temple in Abia State Nigeria during sunset">
+        <figcaption>Aba Nigeria Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/adelaide-australia-temple.jpg" alt="Adelaide temple with a sunny blue sky">
+        <figcaption>Adelaide Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/albuquerque-temple.jpg" alt="Albuquerque temple uring a sunset with a beautiful water fountain in front of the temple">
+        <figcaption>Albuquerque Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/anchorage-temple.jpg" alt="Anchorage temple in Alaska surrounded with white snow">
+        <figcaption>Anchorage Alaska Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/apia-samoa-temple.jpg" alt="Apia temple in Samoa during the last few minutes of a sunset with palm tress in front">
+        <figcaption>Apia Samoa Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/arequipa-peru-temple.jpeg" alt="The Arequipa Peru temple with the El Misti volcano in the background">
+        <figcaption>Arequipa Peru Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/ber-switzerland-temple.jpg" alt="The Ber Zwitzerland temple with a blue sky and white clouds over it surrounded with trees">
+        <figcaption>Ber Switzerland Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/monterrey-mexico-temple.jpg" alt="Monterrey Mexico temple surrounded with greenery and a mountain in the background">
+        <figcaption>Monterrey Mexico Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/bountiful-temple.jpg" alt="Bountiful temple with white fluffy clouds over it">
+        <figcaption>Bountiful Utah Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>© <span id="currentyear"></span> | Mary A. Monterroso | Utah</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
