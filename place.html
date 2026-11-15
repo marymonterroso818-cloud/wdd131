@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guatemala | WDD 131 Country Page</title>
+  <meta name="description" content="Explore Guatemala's key statistics, rich culture, and weather information.">
+  <meta name="author" content="Mary Monterroso">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Guatemala</h1>
+  </header>
+  <main>
+    <div class="hero">
+      <picture>
+        <source srcset="images/antigua-guatemala-volcano-large.webp" media="(min-width: 750px)">
+        <img src="images/antigua-guatemala-volcano-small.webp" alt="Volcano rising above Antigua, Guatemala, surrounded by clouds." width="600" height="800">
+      </picture>
+    </div>
+    <section class="country-data">
+      <h2>Data</h2>
+      <dl>
+        <dt>Area:</dt>
+        <dd>108,889 km²</dd>
+        <dt>Population:</dt>
+        <dd>Approximately 18 million</dd>
+        <dt>Capital:</dt> 
+        <dd>Guatemala City</dd>
+        <dt>Languages:</dt>
+        <dd>Spanish and Mayan languages</dd>
+        <dt>Currency:</dt>
+        <dd>Guatemalan quetzal (GTQ)</dd>
+        <dt>Time Zone:</dt>
+        <dd>UTC-6</dd>
+        <dt>Calling Code:</dt>
+        <dd>+502</dd>
+        <dt>Internet TLD:</dt>
+        <dd>.gt</dd>
+      </dl>
+    </section>
+    <section class="weather">
+      <h2>Weather</h2>
+      <img src="images/weather.svg" alt="Partly cloudy weather icon" class="weather-icon" width="64" height="64">
+      <dl>
+        <dt>Temperature:</dt>
+        <dd>8°C</dd>
+        <dt>Conditions:</dt>
+        <dd>Partly Cloudy</dd>
+        <dt>Wind Speed:</dt>
+        <dd>12 km/h</dd>
+        <dt>Wind Chill:</dt>
+        <dd id="wind-chill">N/A</dd>
+      </dl>
+    </section>
+  </main>
+  <footer>
+  <p>© <span id="currentyear"></span> | Guatemala</p>
+  <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
