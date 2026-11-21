@@ -115,7 +115,9 @@ function displayTemples(templeList) {
       <img
         src="${temple.imageUrl}"
         alt="${temple.templeName} Temple"
-        loading="lazy">`;
+        loading="lazy"
+        width:"400"
+        height:"250">`;
     
     templeGrid.appendChild(card);
 
