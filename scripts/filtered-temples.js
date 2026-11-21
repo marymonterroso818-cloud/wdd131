@@ -167,3 +167,12 @@ newLink.addEventListener("click", (event) => {
   });
   displayTemples(newTemples);
 }); 
+
+const homeLink = document.querySelector("#home");
+homeLink.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  document.querySelector("h1").textContent = "Home";
+  displayTemples(temples);
+});
+
